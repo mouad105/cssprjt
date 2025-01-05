@@ -1,0 +1,179 @@
+/*HOME CSS !!!!*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo{
+ width: 20%;
+ height: 80px;
+margin-left: 40%;
+margin-top: 5px;
+}
+ 
+.clr{
+  background-color: black;
+  padding-bottom: 100px;
+}
+
+.clr2{
+  background-color: black;
+  padding-bottom: 10px;
+}
+
+nav{
+ 
+ font-family: sans-serif;
+}
+
+nav ul {
+display: flex;
+justify-content: center;
+}
+  
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+  
+}
+  
+nav ul li a {
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: large;
+}
+
+.maini{
+  width: 100%;
+  
+}
+  
+nav ul li a:hover{
+color: gold;
+}
+
+#btn{
+
+  position: absolute;
+  top: 80%;
+  left: 55%;
+  transform: translate(-50%,-50%);
+ 
+}
+
+.text{
+  color:white;
+  position: absolute;
+  right: 60%;
+  top: 40%;
+  transform: translate(-50%,-50%);
+  letter-spacing: 3px;
+}
+
+/* CONTACT CSS !!!*/
+
+#cnt{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#contact{
+  background-color: rgb(73, 73, 73);
+  padding: 10px;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+#cnt #contact input,textarea{
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  flex-basis: 200px;
+  flex-grow: 1;
+}
+
+.s1{
+  display: flex;
+  flex-grow: 1;
+}
+.s1:hover{
+  cursor: pointer;
+  background-color: rgb(34, 202, 34);
+}
+input:focus{
+  background-color: lightgreen;
+}
+
+@media screen and (min-width: 980px){
+  #contact{
+    display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 70%;
+  flex-wrap: nowrap;
+  flex-grow: 0;
+  }
+}
+/* About Us Section */
+#about-us {
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.about-content {
+  max-width: 800px;
+}
+
+.about-content p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.7;
+}
+
+/* About Image */
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+  #about-us {
+      flex-direction: row;
+      justify-content: space-between;
+  }
+
+  .about-content {
+      max-width: 600px;
+      margin-right: 2rem;
+  }
+
+  .about-image {
+      max-width: 500px;
+      margin-right: 25px;
+  }
+}
