@@ -19,7 +19,7 @@ margin-top: 5px;
 
 .clr2{
   background-color: black;
-  padding-bottom: 10px;
+  padding-bottom: 70px;
 }
 
 nav{
@@ -76,52 +76,88 @@ color: gold;
   transform: translate(-50%,-50%);
   letter-spacing: 3px;
 }
+/* CHECK BTN */
 
-/* CONTACT CSS !!!*/
-
-#cnt{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-#contact{
-  background-color: rgb(73, 73, 73);
-  padding: 10px;
-  width: 80%;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
-}
-#cnt #contact input,textarea{
-  border: none;
-  outline: none;
-  padding: 5px 10px;
-  flex-basis: 200px;
-  flex-grow: 1;
-}
-
-.s1{
-  display: flex;
-  flex-grow: 1;
-}
-.s1:hover{
-  cursor: pointer;
-  background-color: rgb(34, 202, 34);
-}
-input:focus{
-  background-color: lightgreen;
-}
-
-@media screen and (min-width: 980px){
-  #contact{
-    display: flex;
-  flex-direction: column;
-  width: 70%;
-  height: 70%;
-  flex-wrap: nowrap;
-  flex-grow: 0;
+  .checkbtn{
+    font-size:30px ;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
   }
+  
+  #check{
+    display: none;
+  }
+
+  @media (max-width: 952px){
+    nav ul li a{
+      font-size: 16px;
+
+    }
+  }
+  @media (max-width: 858px){
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      top: 150px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+      background-color: black;
+      flex-direction: column;
+    }
+    nav ul li{
+      display: block;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+    .logo{
+      width: 50%;
+      height: 40%;
+      margin: 0 100px;
+    }
+    .main{
+      display: none;
+    }
+    #icn{
+      display: none;
+    }
+  }
+  /*AMG SECTION*/
+
+   #amg1{
+    height: 60%;
+    width: 50%;
+    margin: 7% 0 0 1rem;
+   }
+.amg1{
+  color:rgb(0, 0, 0);
+  position: absolute;
+  left: 70%;
+  top: 180%;
+  transform: translate(-50%,-50%);
+  text-wrap: wrap;
+  font-size: 20px;
+  font-weight: bold;
+
+}
+.amg h1{
+  position: absolute;
+  right: 10%;
+  top: 140%;
+  transform: translate(-50%,-50%);
+  letter-spacing: 3px;
 }
 /* About Us Section */
 #about-us {
@@ -148,7 +184,7 @@ input:focus{
 
 .about-content p {
   font-size: 1.1rem;
-  color: #555;
+  color:#777;
   line-height: 1.7;
 }
 
@@ -175,5 +211,68 @@ input:focus{
   .about-image {
       max-width: 500px;
       margin-right: 25px;
+  }
+}
+/* CONTACT CSS !!!*/
+
+#cnt{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 10% 20%;
+}
+#contact{
+  background-color: rgb(73, 73, 73);
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  
+}
+#cnt #contact input,textarea{
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  flex-basis: 200px;
+  flex-grow: 1;
+}
+
+.s1{
+  display: flex;
+  flex-grow: 1;
+}
+.s1:hover{
+  cursor: pointer;
+  background-color: rgb(34, 202, 34);
+}
+input:focus{
+  background-color: lightgreen;
+}
+
+@media screen and (min-width: 980px){
+  #contact{
+    display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 40%;
+  flex-wrap: nowrap;
+  flex-grow: 0;
+  }
+}
+
+@media screen and (min-width: 370px){
+  #contact{
+    display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  flex-wrap: nowrap;
+  flex-grow: 1;
+  margin: 90px 0px;
+  }
+  .clr2{
+    padding-bottom: 110px;
   }
 }
