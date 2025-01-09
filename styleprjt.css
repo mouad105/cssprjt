@@ -133,11 +133,13 @@ color: gold;
     #icn{
       display: none;
     }
+    .amg{
+      display: none;
+    }
   }
   /*AMG SECTION*/
 
    #amg1{
-    height: 60%;
     width: 50%;
     margin: 7% 0 0 1rem;
    }
@@ -152,12 +154,53 @@ color: gold;
   font-weight: bold;
 
 }
-.amg h1{
+.amg #h1ab{
   position: absolute;
   right: 10%;
   top: 140%;
   transform: translate(-50%,-50%);
   letter-spacing: 3px;
+}
+.amg2{
+  position: absolute;
+  top: 220%;
+  left: 52%;
+  width: 45%;
+  margin-bottom: 200px;
+  
+}
+.interior{
+  width: 50%;
+  color:rgb(0, 0, 0);
+  position: absolute;
+  left: 26%;
+  top: 246%;
+  transform: translate(-50%,-50%);
+  font-size: 20px;
+  line-height: 2rem;
+  font-weight: bold;
+  text-wrap: wrap;
+}
+#h1g2{
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+.footer-content2{
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 150px;
+  background-color: gray;
+  top: 280%;
+  justify-content: center;
+}
+.footer-content2 p{
+  color: white;
+}
+.social-links2 a{
+text-decoration: none;
+color: gold;
 }
 /* About Us Section */
 #about-us {
@@ -168,7 +211,7 @@ color: gold;
   flex-direction: column;
 }
 
-.container {
+.containerabout {
   max-width: 1200px;
   width: 100%;
   display: flex;
@@ -176,6 +219,7 @@ color: gold;
   align-items: center;
   justify-content: center;
   text-align: center;
+  margin-left: 20%;
 }
 
 .about-content {
@@ -212,7 +256,31 @@ color: gold;
       max-width: 500px;
       margin-right: 25px;
   }
+  .footer-content{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    background-color: gray;
+    top: 180%;
+    justify-content: center;
+  }
 }
+  
+  @media screen and (max-width: 600px){
+    .footer-content{
+      display: flex;
+      position: absolute;
+      width: 100%;
+      height: 100px;
+      background-color: gray;
+      top: 110%;
+      justify-content: center;
+    }
+      .containerabout{
+        margin: 20px;
+      }
+  }
 /* CONTACT CSS !!!*/
 
 #cnt{
@@ -256,13 +324,13 @@ input:focus{
     display: flex;
   flex-direction: column;
   width: 100%;
-  height: 40%;
+  height: 80%;
   flex-wrap: nowrap;
   flex-grow: 0;
   }
 }
 
-@media screen and (min-width: 370px){
+@media screen and (max-width: 700px){
   #contact{
     display: flex;
   flex-direction: column;
@@ -274,5 +342,69 @@ input:focus{
   }
   .clr2{
     padding-bottom: 110px;
+  }
+  #cnt #contact {
+    height: 70%;
+  }
+}
+
+
+
+/*PRODUCT SECTION !!!*/
+.cars{
+  width: 100%;
+  height:500px ;
+  padding-left: 10%;
+}
+#card1{
+  width: 350px;
+  height: 400px;
+  background-color: #ffffff;
+  margin: 20px;
+  border: solid 2px #615e5e50;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.sl55{
+  width: 130%;
+  padding-right: 60px;
+}
+
+#card1 p{
+  font-weight:16px ;
+  font-size: 16px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+}
+
+#card1 button{
+  margin: 10px 0 0 32px;
+}
+#card1:hover{
+  transition: 0.3ms;
+  scale: 105%;
+}
+.footer-content3{
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 150px;
+  background-color: gray;
+  top: 180%;
+  justify-content: center;
+}
+
+@media screen and (max-width: 600px){
+  .footer-content3{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-color: gray;
+    top: 590%;
+    justify-content: center;
   }
 }
