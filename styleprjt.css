@@ -140,7 +140,11 @@ color: gold;
     .amg{
       display: none;
     }
+   
+  }
+  @media (max-width: 759px){
     .amg5{
+      display: block;
       width: 100%;
     }
     #amg5{
@@ -169,8 +173,9 @@ color: gold;
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       margin-bottom: 40px;
     }
-    .footer-content2{
-      display: none;
+    footer{
+      position: relative;
+      top: 250%;
     }
   }
   /*AMG SECTION*/
