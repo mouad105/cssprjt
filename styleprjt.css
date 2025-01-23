@@ -72,7 +72,7 @@ color: gold;
 .text{
   color: white;
   position: absolute;
-  right: 60%;
+  right: 40%;
   top: 40%;
   transform: translate(-50%,-50%);
   letter-spacing: 3px;
@@ -337,7 +337,7 @@ color: gold;
     width: 100%;
     height: 150px;
     background-color: gray;
-    top: 140%;
+    top: 200%;
     justify-content: center;
   }
 }
@@ -351,7 +351,7 @@ color: gold;
       }
   }
 
-  @media screen and (max-width: 1669px){
+  @media screen and (min-width: 1669px){
     .containerabout {
       max-width: 1700px;
       width: 100%;
@@ -365,7 +365,7 @@ color: gold;
 
     .footer-content{
      
-      top: 110%;
+      top: 200%;
      
     }
   }
@@ -505,4 +505,9 @@ input:focus{
   }
   
   }
-  
+  @media screen and (min-width: 1670px) {
+     footer.footer-content2{
+      top: 300%;
+     }
+    
+  }
